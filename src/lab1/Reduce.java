@@ -5,18 +5,15 @@ public class Reduce {
         int steps = 0;
         int x = n;
         while (x > 0) {
-            if (x % 2 == 0) {
+            if (x % 2 == 0)
                 x = x / 2;
-            }else {
+            else
                 x -= 1;
-            }
             steps++;
         }
         return steps;
-
     }
-}
-
-public static void main(String[] args) {
-    System.out.println(Reduce.reduce(100));
+    public static void main(String[] args) {
+        System.out.println(reduce(100));
+    }
 }
